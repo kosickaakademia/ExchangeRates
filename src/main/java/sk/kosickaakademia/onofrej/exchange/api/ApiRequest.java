@@ -14,7 +14,7 @@ import java.util.Set;
 public class ApiRequest {
 
     // kluc ziskany z registracie na API serveri
-  private static String key  = "7f193180007ca666e168d9cd573780e6";
+  private static final String key  = "7f193180007ca666e168d9cd573780e6";
 
     // verejna metoda, tato metoda sa bude volat zvonka (ine triedy)
     // ak niekto bude potrebovat nejaky kurz

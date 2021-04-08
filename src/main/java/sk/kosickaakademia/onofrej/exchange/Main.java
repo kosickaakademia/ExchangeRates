@@ -1,6 +1,7 @@
 package sk.kosickaakademia.onofrej.exchange;
 
 import sk.kosickaakademia.onofrej.exchange.api.ApiRequest;
+import sk.kosickaakademia.onofrej.exchange.calc.CalcExchangeRates;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -21,7 +22,8 @@ public class Main
         set.add("CZK");
         set.add("BTC");
 
-        Map map = new ApiRequest().getExchangeRates(set);
-        System.out.println(map.toString());
+        CalcExchangeRates calcExchangeRates = new CalcExchangeRates();
+        calcExchangeRates.calculate(85);
+
     }
 }

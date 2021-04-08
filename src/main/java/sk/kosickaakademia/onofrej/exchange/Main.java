@@ -19,7 +19,6 @@ public class Main
         set.add("USD");
         set.add("HUF");
         set.add("CZK");
-        set.add("AAA");
         set.add("BTC");
 
         Map map = new ApiRequest().getExchangeRates(set);

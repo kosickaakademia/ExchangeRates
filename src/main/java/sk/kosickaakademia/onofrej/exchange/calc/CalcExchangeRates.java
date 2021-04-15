@@ -1,6 +1,7 @@
 package sk.kosickaakademia.onofrej.exchange.calc;
 
 import sk.kosickaakademia.onofrej.exchange.api.ApiRequest;
+import sk.kosickaakademia.onofrej.exchange.database.DatabaseMongo;
 
 import java.util.*;
 
@@ -51,7 +52,7 @@ public class CalcExchangeRates {
             System.out.println("Input param cannot be a negative value!");
             return null;
         }
-
+        new DatabaseMongo().writeData(eur,ratesGui);
         // huraaaaa, vstup je ok
         // prekopirujeme zoznam - pole String[] do kolekcie HashSet
         Set<String> set = new HashSet<>();

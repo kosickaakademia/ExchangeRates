@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sk.kosickaakademia.onofrej.exchange.api.ApiRequest;
 import sk.kosickaakademia.onofrej.exchange.calc.CalcExchangeRates;
+import sk.kosickaakademia.onofrej.exchange.database.DatabaseMongo;
 
 import java.io.File;
 import java.net.URL;
@@ -22,12 +23,14 @@ public class Main extends Application
 {
     public static void main( String[] args )
     {
-        System.out.println( "Welcome to the Exchange Rates App!" );
+        /*DatabaseMongo dm = new DatabaseMongo();
+        dm.test();*/
+        /*System.out.println( "Welcome to the Exchange Rates App!" );
         Set<String> set = new HashSet<>();
         set.add("USD");
         set.add("HUF");
         set.add("CZK");
-        set.add("BTC");
+        set.add("BTC");*/
 
         CalcExchangeRates calcExchangeRates = new CalcExchangeRates();
         calcExchangeRates.calculate(85);
